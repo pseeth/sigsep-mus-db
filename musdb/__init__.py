@@ -2,8 +2,8 @@ from __future__ import print_function
 from .audio_classes import Track, Source, Target
 from os import path as op
 from six.moves import map
-import multiprocessing
 try:
+    import multiprocessing
     import soundfile as sf
 except ImportError:
     pass
