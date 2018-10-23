@@ -3,7 +3,10 @@ from .audio_classes import Track, Source, Target
 from os import path as op
 from six.moves import map
 import multiprocessing
-import soundfile as sf
+try:
+    import soundfile as sf
+except ImportError:
+    pass
 import collections
 import numpy as np
 import functools
